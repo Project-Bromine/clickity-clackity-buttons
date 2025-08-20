@@ -1,3 +1,4 @@
+$(function() {
 const mainButton = document.getElementById("gameButton");
 const cMult = document.getElementById("upgradeCMulti");
 const aCBtn = document.getElementById("buyAutoClicker");
@@ -46,3 +47,4 @@ function upgrade(attribute){
      break;
   }
 }
+});
