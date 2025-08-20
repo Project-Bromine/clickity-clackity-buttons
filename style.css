@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+* {
+  font-family: "Mozilla Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background: #363636;
+  color: white;
+}
+
+#gameButton, .upgradeBtn{
+  transition: background 0.2s ease;
+  background: #202020;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 10vh;
+  width: 100%;
+}
+
+#gameButton:hover, .upgradeBtn:hover{
+  background: #303030;
+}
+
+#gameButton:active, .upgradeBtn:active{
+  background: #454545;
+}
+
+#upgradeContainer {
+  background: #252525;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.upgradeBtn {
+  margin-top: 10px;
+}
+
+#upgradeCMulti {
+  margin-top: 0px;
+}
