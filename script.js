@@ -69,7 +69,7 @@ function upgrade(attribute){
         aCDelayPrice += aCDelayPrice * 2;
         startAutoClicker(); // restart interval w/ new delay
       }
-     break;:
+     break;
   }
 }
   
