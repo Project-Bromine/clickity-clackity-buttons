@@ -8,6 +8,7 @@ let cMultPrice = 25;
 let autoClickers = 0;
 let aCPrice = 100;
 let autoClickerDelayMS = 5000;
+let acInterval;
 let aCDelayPrice = 1000;
 let autoclickerMulti = 1;
 let aCMultiPrice = 10000;
@@ -20,7 +21,7 @@ function updateButtons() {
   if(clicks == 1){
     mainButton.innerHTML = 'The button has been clicked '+clicks+' time.';
   } else {
-    mainButton.innerHTML = 'The button has been clicked '+clicks+' times.';
+    mainButton.innerHTML = 'The button has been clicked '+clicks+' timaes.';
   }
   cMult.innerHTML = 'Increase Click Multiplier: ' + cMultPrice + ' Clicks';
 }
@@ -47,4 +48,18 @@ function upgrade(attribute){
      break;
   }
 }
+  
+function startAutoClicker() {
+  if (autoClickerInterval) {
+    clearInterval(autoClickerInterval);
+  }
+  autoClickerInterval = setInterval(function () {
+    if (autoClickers > 0) {
+      clicks += autoClickers * autoclickerMulti;
+      updateButtons();
+    }
+  }, autoClickerDelayMS);
+}
+
+startAutoClicker();
 });
