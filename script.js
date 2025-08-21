@@ -21,7 +21,7 @@ function updateButtons() {
   if(clicks == 1){
     mainButton.innerHTML = 'The button has been clicked '+clicks+' time.';
   } else {
-    mainButton.innerHTML = 'The button has been clicked '+clicks+' timaes.';
+    mainButton.innerHTML = 'The button has been clicked '+clicks+' times.';
   }
   cMult.innerHTML = 'Increase Click Multiplier: ' + cMultPrice + ' Clicks';
 }
@@ -46,6 +46,7 @@ function upgrade(attribute){
         aCPrice = aCPrice + aCPrice * 2;
       }
      break;
+     case "autoDelay":
   }
 }
   
